@@ -1,0 +1,13 @@
+[package]
+name = "ticker"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+anyhow = "1.0.103"
+chrono = "0.4.45"
+reqwest = { version = "0.13.4", default-features = false, features = ["json", "query", "rustls", "http2"] }
+rust_decimal = { version = "1.42.1", features = ["serde-with-str"] }
+serde = { version = "1.0.228", features = ["derive"] }
+tokio = { version = "1.52.3", features = ["macros", "rt-multi-thread", "time", "sync"] }
